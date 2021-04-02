@@ -26,7 +26,7 @@ class GoogleSearch
     puts "#{result}"
     File.open("results.yml", "w") { |file| file.write(result.to_yaml) }
     result_array = YAML.load(File.read("results.yml"))
-    z    p result_array
+    p result_array
 
 
 
